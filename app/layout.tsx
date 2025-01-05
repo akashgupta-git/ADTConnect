@@ -3,9 +3,12 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google"; // Import Inter from the correct package
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+<<<<<<< HEAD
 import { Toaster } from "@/components/ui/toaster"
 import '@stream-io/video-react-sdk/dist/css/styles.css';
 import 'react-datepicker/dist/react-datepicker.css'
+=======
+>>>>>>> 8fda909 (Authentication implementation using clerk)
 
 const inter = Inter({ subsets: ["latin"] });
 const geistSans = localFont({
@@ -54,7 +57,10 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased bg-dark-2`}
         >
           {children}
+<<<<<<< HEAD
           <Toaster/>
+=======
+>>>>>>> 8fda909 (Authentication implementation using clerk)
         </body>
       </ClerkProvider>
     </html>
